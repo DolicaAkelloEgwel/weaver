@@ -3,7 +3,7 @@ import cv2
 # read the image file
 img = cv2.imread('input.jpg', 2)
 
-ret, bw_img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
+bw_img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)[1]
 
 # converting to its binary form
 bw = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
