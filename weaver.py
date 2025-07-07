@@ -1,7 +1,7 @@
 import cv2
 
 # read the image file
-img = cv2.imread('tube.jpg', 2)
+img = cv2.imread('input.jpg', 2)
 
 # converting to its binary form
 bw_img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)[1]
